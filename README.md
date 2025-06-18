@@ -24,7 +24,7 @@ geer-intern-assignment/
 
 ### 📦 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/geer-intern-assignment.git
+git clone https://github.com/sakshambajpai1604/geer-intern-assignment.git
 cd geer-intern-assignment
 ```
 
