@@ -6,7 +6,7 @@ export default function ProductsPage() {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/products')
+    fetch('https://geer-intern-assignment.onrender.com/api/products')
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
