@@ -1,0 +1,61 @@
+{
+  "info": {
+    "_postman_id": "f0d45517-859b-4229-a935-1b1d6e46d6b7",
+    "name": "Geer API - Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Organic Hoodie\",\n  \"price\": 799,\n  \"image\": \"/images/hoodie.jpg\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Delete Product by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/api/products/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "products", ":id"]
+        }
+      },
+      "description": "Replace `:id` in the URL with actual product ID."
+    }
+  ]
+}
